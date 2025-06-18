@@ -1,3 +1,25 @@
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview"
+}
+{
+  "builds": [
+    {
+      "src": "vite.config.ts",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
+
+
 import React, { useState } from 'react';
 import { Clock, User, RefreshCw, Save, ArrowLeft, Plus, Minus, Users, Edit, BookOpen, CheckCircle } from 'lucide-react';
 
