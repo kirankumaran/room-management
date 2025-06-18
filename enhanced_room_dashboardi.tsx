@@ -1,15 +1,3 @@
-import React from 'react';
-import RoomDashboard from './enhanced_room_dashboardi';
-
-function App() {
-  return <RoomDashboard />;
-}
-
-export default App;
-
-
-
-
 import React, { useState } from 'react';
 import { Clock, User, RefreshCw, Save, ArrowLeft, Plus, Minus, Users, Edit, BookOpen, CheckCircle } from 'lucide-react';
 
